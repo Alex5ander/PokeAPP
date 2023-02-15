@@ -13,7 +13,6 @@ import android.widget.ProgressBar;
 import com.example.pokeapp.viewmodels.MainViewModel;
 import com.example.pokeapp.adapter.RegionsAdapter;
 public class MainActivity extends AppCompatActivity {
-    boolean isInitialLaunch = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

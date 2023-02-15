@@ -11,11 +11,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <SearchView
+        <EditText
             android:id="@+id/search_pokemon"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:queryHint="@string/search_pokemon_hint" />
+            android:layout_height="48dp"
+            android:autofillHints="name"
+            android:hint="@string/search_pokemon_hint"
+            android:inputType="text" />
 
         <TextView
             android:id="@+id/region_title"

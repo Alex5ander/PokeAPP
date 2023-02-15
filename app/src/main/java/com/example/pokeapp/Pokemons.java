@@ -9,6 +9,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -45,19 +48,17 @@ public class Pokemons extends AppCompatActivity {
         recyclerView.addItemDecoration(divider);
 
         ProgressBar progressBar = findViewById(R.id.loading_pokemons);
-        SearchView search_pokemons = findViewById(R.id.search_pokemon);
+        EditText search_pokemons = findViewById(R.id.search_pokemon);
 
-        search_pokemons.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        search_pokemons.addTextChangedListener(new TextWatcher() {
             @Override
-            public boolean onQueryTextSubmit(String s) {
-                return false;
-            }
-
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
             @Override
-            public boolean onQueryTextChange(String s) {
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
+            @Override
+            public void afterTextChanged(Editable editable) {
                 Handler handler = new Handler();
-                handler.postDelayed( () -> {adapter.getFilter().filter(s);}, 1000);
-                return false;
+                handler.postDelayed( () -> {adapter.getFilter().filter(editable);}, 1000);
             }
         });
 
