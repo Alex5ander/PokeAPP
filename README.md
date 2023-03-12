@@ -7,17 +7,19 @@
 </h4>
 
 <p align="center">
- <a href="#objetivo">Objetivo</a> •
+ <a href="#objetivos">Objetivos</a> •
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#como-executar-o-projeto">Como executar o projeto</a>
- <a href="#poke-app">Aplicativo</a>
+ <a href="#aplicativo">Aplicativo</a>
 </p>
 
-### Objetivo
+### Objetivos
 
-Aprender a construir aplicativos Android de forma nativa e aprender sobre as bibliotecas Retrofit para comunicação HTTP e Picasso para carregamento das imagens a partir de URLs fornecidos pela API
+Aprender a construir aplicativos Android de forma nativa e aprender sobre as bibliotecas Retrofit para comunicação HTTP e Picasso para carregamento das imagens a partir de URLs fornecidos pela API.
 
-### 🛠 Tecnologias
+Aprender a persistir o estado do aplicativo usando ViewModel e lidar com os ciclos de vida das Activity.
+
+<h3 id="tecnologias">🛠 Tecnologias</h3>
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -39,7 +41,7 @@ $ git clone <https://github.com/Alex5ander/PokeAPP>
 # Clique em Run App para executar o projeto em um emulador configurado ou dispositivo fisico conectado na porta USB
 ```
 
-<h1 align="center">Poke APP</h1>
+<h3 id="aplicativo" align="center">Poke APP</h3>
 
 <div align="center">
   <img src="device-2023-03-12-112353.gif" width="300" />
